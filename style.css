@@ -176,6 +176,13 @@ header{
     color: #ffffff;
 }
 
+/*===================*/
+.avisos{
+    text-align: left;
+    border: 1px solid #1f384c88;
+    padding: 5px;
+}
+
 @media(max-width: 600px){
     .areaSenha{
         width: auto;
