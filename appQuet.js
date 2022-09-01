@@ -24,3 +24,7 @@ function usuariomenu(){
     const navdois = document.getElementById('userOpcs');
     navdois.classList.toggle('ativou');
 }
+
+function chamaQues(){
+    questoes.style.display='block'
+}
