@@ -1,0 +1,68 @@
+.infPaginas{
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.infPaginas > div{
+    margin-left: 5px;
+}
+
+.infPaginas p{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#um{
+    color: #5A6ACF;
+}
+
+#dois{
+    color: #F1173A;
+}
+
+.sApli{
+    display: flex;
+}
+
+.aplicacao{
+    padding: 10px;
+}
+
+.aplicacao button{
+    background: #1E49E2;
+    border: 1px solid #1E49E2;
+    border-radius: 3px;
+    width: 64px;
+    height: 30px;
+    color: #ffffff;
+
+}
+
+#apo{
+    width: 148px;
+    height: 31px;
+    border: 0.5px solid #686F78;
+    border-radius: 3px;
+}
+
+/*===========*/
+
+.ass{
+    display: flex;
+    justify-content: space-around;
+    background: #F6F6FB;
+    border: 1px solid #C4C4C4;
+    margin: 5px;
+}
+
+.ass > div{
+    display: flex;
+}
+
+.ass p{
+    margin-right: 5px;
+    color: #1F384C;
+    font-weight: 900;
+    font-size: 16px;
+}

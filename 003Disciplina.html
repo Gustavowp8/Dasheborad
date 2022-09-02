@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="questao.css">
     <title>Qquestão</title>
 </head>
 <body>
@@ -32,7 +33,15 @@
         <div id="opcsMenu">
             <nav>
                 <ul>
-                    <li><a href="#">Questões</a></li>
+                    <li><a onclick="chamaQues()" href="#">Questões</a></li>
+                    <div class="questoes" id="questoes">
+                        <ul>
+                            <p>Todas as questões</p>
+                            <li><a href="003Disciplina.html">Disciplina/Assunto</a></li>
+                            <li><a href="#">Banca</a></li>
+                            <li><a href="#">Órgão</a></li>
+                        </ul>
+                    </div>
                     <li><a href="#">Simulados</a></li>
                     <li><a href="004Usuarios.html">Usuários</a></li>
                     <li><a href="005Comentarios.html">Comentários</a></li>
@@ -59,14 +68,84 @@
 
         <button id="btnPadrao">ADICIONAR</button>
 
+        <button id="btnPadrao">IMPORTAR QUESTÕES</button>
+
     </div>
 
         <div class="buscar">
-            <input type="text" name="bBusca" id="bbusca" placeholder="Pesquisar usuário">
+            <input type="text" name="bBusca" id="bbusca" placeholder="Pesquisar questões">
             <button id="btnBusca"><img src="img/lupa.svg" width="10px"></button>
         </div>
 
-    <h2>Sem Registros</h2>
+    <div class="infPaginas">
+        <div>
+            <p id="um">Todos (0) | </p>
+        </div>
+
+        <div>
+            <p>Publicados (0) | </p>
+        </div>
+
+        <div>
+            <p id="dois">Lixo (0)</p>
+        </div>
+    </div>
+
+    <div class="sApli">
+
+        <div class="aplicacao">
+
+            <select name="apl" id="apo">
+                <option value="1">Ações em massa</option>
+                <option value="2">BD vazio</option>
+            </select>
+    
+            <button>APLICAR</button>
+    
+        </div>
+
+        <div class="aplicacao">
+
+            <select name="apl" id="apo">
+                <option value="1">Todas as datas</option>
+                <option value="2">Indisponivel</option>
+            </select>
+    
+            <button>FILTRAR</button>
+    
+        </div>
+
+    </div>
+
+    <div class="ass">
+        <div>
+            <p>ID</p> <img src="img/setaBaixoDash.svg"> <img src="img/setaCimaDash.svg">
+        </div>
+
+        <div>
+            <p>DISCIPLINA/ASSUNTO</p> <img src="img/setaBaixoDash.svg"> <img src="img/setaCimaDash.svg">
+        </div>
+
+        <div>
+            <p>BANCA</p> <img src="img/setaBaixoDash.svg"> <img src="img/setaCimaDash.svg">
+        </div>
+
+        <div>
+            <p>ÓRGÃO</p> <img src="img/setaBaixoDash.svg"> <img src="img/setaCimaDash.svg">
+        </div>
+
+        <div>
+            <p>CARGO</p> <img src="img/setaBaixoDash.svg"> <img src="img/setaCimaDash.svg">
+        </div>
+
+        <div>
+            <p>ANO</p> <img src="img/setaBaixoDash.svg"> <img src="img/setaCimaDash.svg">
+        </div>
+
+        <div>
+            <p>DATA</p> <img src="img/setaBaixoDash.svg"> <img src="img/setaCimaDash.svg">
+        </div>
+    </div>
 
     <script src="appQuet.js"></script>
 </body>
