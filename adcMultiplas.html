@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo/adiciona.css">
+    <title>Qquestão</title>
+</head>
+<body>
+    
+    <header>
+        <div class="opc">
+            <img id="cMenu" src="img/menu.svg">
+            <img id="sLogo" src="img/logoDash.png">
+        </div>
+
+        <div class="user" id="user">
+            <div class="ftUser"></div>
+            <p>Teste</p>
+            <img id="setaB" src="img/setaBaixo.svg">
+
+            <div id="userOpcs">
+                <ul>
+                    <li><a href="#">Configuração</a></li> 
+                    <li><a href="index.html">SAIR</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="opcsMenu">
+            <nav>
+                <ul>
+                    <li><a onclick="chamaQues()" href="#">Questões</a></li>
+                    <div class="questoes" id="questoes">
+                        <ul>
+                            <p>Todas as questões</p>
+                            <li><a href="003Disciplina.html">Disciplina/Assunto</a></li>
+                            <li><a href="#">Banca</a></li>
+                            <li><a href="#">Órgão</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#">Simulados</a></li>
+                    <li><a href="004Usuarios.html">Usuários</a></li>
+                    <li><a href="005Comentarios.html">Comentários</a></li>
+                    <li><a href="006Notificacao.html">Notificações</a></li>
+                    <li><a href="007Assinantes.html">Assinantes (Ecommerce)</a></li>
+                    <li><a href="008Guias.html">Guias</a></li>
+                    <li><a href="009Maps.html">Mapas</a></li>
+                    <li><a href="010Grupos.html">Grupos</a></li>
+                    <li><a href="011Planos.html">Planos</a></li>
+                    <li><a href="012Banner.html">Banner</a></li>
+                    <li><a href="013Sobre.html">Sobre</a></li>
+                    <li><a href="014Termos.html">Termos de uso</a></li>
+                    <li><a href="015Duvidas.html">Dúvidas</a></li>
+                    <li><a href="016Ajuda.html">Ajuda</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="telaQuest">
+
+        <div class="escolhas">
+
+            <div class="tTituloQueste">
+
+                <h4>Adicionar nova questão</h4>
+
+                <p>Estilo da questão</p>
+
+                <select name="tadiciona" id="tadiciona">
+
+                    <option value="04" onclick="chaAdd()"><a href="adiciona.html">Certo ou Errado</a></option>
+
+                    <option value="03" onclick="chamaAddes()"><a href="adcMultiplas.html">Múltipla escolha</a></option>
+                </select>
+        
+            </div>
+
+            <div class="adcEnun">
+
+                <p>Texto associado</p>
+
+                <textarea name="enum" id="enum" cols="100%" rows="10"></textarea>
+
+            </div>
+
+            <div class="adcEnun">
+
+                <p>Enunciado</p>
+
+                <textarea name="enum" id="enum" cols="100%" rows="10"></textarea>
+
+            </div><br>
+
+            <div class="opcEscolhas">
+
+                <p id="tTituloAlt">Alternativas</p> <br>
+
+                <p>a)</p>
+                <input type="text" name="opcum" id="opcum"> <br><br>
+
+                <p>b)</p>
+                <input type="text" name="opcum" id="opcum"> <br><br>
+
+                <p>c)</p>
+                <input type="text" name="opcum" id="opcum"> <br><br>
+
+                <p>d)</p>
+                <input type="text" name="opcum" id="opcum"> <br><br>
+
+                <p>e)</p>
+                <input type="text" name="opcum" id="opcum">
+
+            </div>
+
+            <div class="entradaAsdiciona">
+
+                <p>Gabarito</p>
+
+                <select name="gabarito" id="gabarito">
+                    <option value="gabum">Certo</option>
+                    <option value="gabdois">Errado</option>
+                </select>
+            </div>
+
+            <div class="entradaAsdiciona">
+
+                <p>Situação da questão</p>
+
+                <select name="gabarito" id="gabarito">
+                    <option value="gabum">Ativa</option>
+                    <option value="gabdois">Desativado</option>
+                </select>
+            </div>
+
+            <button id="btnAdicionar">ADICIONAR QUESTÃO</button>
+
+        </div>
+
+        <div class="multiplas">
+            
+            <select name="opcDis" id="opcDis">
+                <option value="01">Disciplina</option>
+            </select> <br>
+
+            <select name="opcDis" id="opcDis">
+                <option value="01">Assunto</option>
+            </select> <br>
+
+            <select name="opcDis" id="opcDis">
+                <option value="01">Banca</option>
+            </select> <br>
+
+            <select name="opcDis" id="opcDis">
+                <option value="01">Órgão</option>
+            </select> <br>
+
+            <select name="opcDis" id="opcDis">
+                <option value="01">Cargo</option>
+            </select> <br>
+
+            <select name="opcDis" id="opcDis">
+                <option value="01">Ano</option>
+            </select> <br>
+
+            <select name="opcDis" id="opcDis">
+                <option value="01">Área</option>
+            </select> <br>
+
+            <select name="opcDis" id="opcDis">
+                <option value="01">Escolaridade</option>
+            </select> <br>
+
+            <select name="opcDis" id="opcDis">
+                <option value="01">Formação</option>
+            </select> <br> <br>
+
+            <p>Disciplina</p>
+            <p>Assunto</p>
+            <p>Banca</p>
+            <p>Órgão</p>
+            <p>Cargo</p>
+            <p>Ano</p>
+            <p>Área</p>
+            <p>Escolaridade</p>
+            <p>Formação</p>
+
+        </div>
+
+    </div>
+
+    <script src="appQuet.js"></script>
+</body>
+</html>

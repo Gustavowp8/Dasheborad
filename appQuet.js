@@ -28,3 +28,11 @@ function usuariomenu(){
 function chamaQues(){
     questoes.style.display='block'
 }
+
+function chaAdd(){
+    location='adiciona.html'
+}
+
+function chamaAddes(){
+    location='adcMultiplas.html'
+}
